@@ -1,0 +1,15 @@
+Connect to server
+mysql -uroot -p
+
+purge binary logs
+PURGE BINARY LOGS TO 'mysql-bin.000148'; 
+https://mariadb.com/kb/en/using-and-maintaining-the-binary-log/
+
+SHOW BINARY LOGS Statement
+
+SHOW BINARY LOGS;
+SHOW MASTER LOGS;
+
+show variables like 'expire_logs_days';
+set global expire_logs_days=2;
+
